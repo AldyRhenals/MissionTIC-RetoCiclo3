@@ -7,7 +7,7 @@ namespace ProyectoCiclo3.App.Dominio
         public string nombre { get; set; }
         public string ciudad { get; set; }
         public string pais { get; set; }
-        public string coord_X { get; set; }
+        public string coord_x { get; set; }
         public string coord_y { get; set; }
     }
 }
