@@ -7,7 +7,7 @@ namespace ProyectoCiclo3.App.Persistencia.AppRepositorios
 {
     public class RepositorioAviones
     {
-        List<Aviones> Aviones;
+        List<Aviones> aviones;
         public RepositorioAviones()
         {
             aviones = new List<Aviones>()

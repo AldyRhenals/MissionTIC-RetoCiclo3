@@ -1,0 +1,14 @@
+@page
+@model ProyectoCiclo3.App.Frontend.Pages.DetailsAvionModel
+@{
+    var avion = Model.Avion;
+}
+ 
+<ul class="list-group list-group-flush">
+  <li class="list-group-item"> <b>ID: </b> @avion.id</li>
+  <li class="list-group-item"> <b>Marca: </b> @avion.marca</li>
+  <li class="list-group-item"> <b>Modelo: </b> @avion.modelo</li>
+  <li class="list-group-item"><b>Número de asientos: </b> @avion.numero_asientos</li>
+  <li class="list-group-item"><b>Número de baños: </b> @avion.numero_banios</li>
+  <li class="list-group-item"><b>Capacidad máxima de peso al despegue (toneladas)</b> @avion.capacidad_maxima_peso</li>
+</ul>
