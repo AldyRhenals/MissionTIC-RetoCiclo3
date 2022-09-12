@@ -1,4 +1,4 @@
-/*using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -19,9 +19,8 @@ namespace ProyectoCiclo3.App.Frontend.Pages
         }
         public IActionResult OnGet(int avionId)
         {
-            Avion = repositorioaviones.GetWithId(avionId);
+            Avion = repositorioAviones.GetWithId(avionId);
             return Page();
         }
     }
 }
-*/

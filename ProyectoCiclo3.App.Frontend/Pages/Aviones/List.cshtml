@@ -1,4 +1,4 @@
-@*@page
+@page
 @model ProyectoCiclo3.App.Frontend.Pages.ListAvionesModel
 @{}
  
@@ -15,15 +15,15 @@
     </tr>
   </thead>
   <tbody>
-   @foreach (var aviones in Model.Aviones)
+   @foreach (var avion in Model.Aviones)
     {
         <tr>
-            <td>@aviones.id</td>
-            <td>@aviones.marca</td>
-            <td>@aviones.modelo</td>
-            <td>@aviones.numero_asientos</td>
-            <td>@aviones.numero_banios</td>
-            <td>@aviones.capacidad_maxima_peso</td>
+            <td>@avion.id</td>
+            <td>@avion.marca</td>
+            <td>@avion.modelo</td>
+            <td>@avion.numero_asientos</td>
+            <td>@avion.numero_banios</td>
+            <td>@avion.capacidad_maxima_peso</td>
             <td>
               <a class="btn btn-info" asp-page="./Details" asp-route-avionId = "@avion.id"><i class="fas fa-adjust"></i>Ver</a>
               <a class="btn btn-info" asp-page="./Edit" asp-route-avionId = "@avion.id">Editar</a>
@@ -33,4 +33,3 @@
     }
   </tbody>
 </table>
-*@
