@@ -25,5 +25,18 @@ namespace ProyectoCiclo3.App.Persistencia.AppRepositorios
         {
             return aeropuertos.SingleOrDefault(a => a.id == id);
         }
+        public Aeropuertos Update(Aeropuertos newAeropuerto)
+        {
+            var aeropuerto = aeropuertos.SingleOrDefault(a => a.id == newAeropuerto.id);
+            if(aeropuerto != null)
+            {
+                aeropuerto.nombre   = newAeropuerto.nombre;
+                aeropuerto.ciudad   = newAeropuerto.ciudad;
+                aeropuerto.pais     = newAeropuerto.pais;
+                aeropuerto.coord_x  = newAeropuerto.coord_x;
+                aeropuerto.coord_y  = newAeropuerto.coord_y;
+            }
+            return aeropuerto;
+        }
     }
 }
