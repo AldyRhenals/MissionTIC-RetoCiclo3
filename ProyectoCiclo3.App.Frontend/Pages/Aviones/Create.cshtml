@@ -5,19 +5,19 @@
 <div class="text-center">
     <form method="POST">
         <label for="marca" class="form-label">Marca:</label>
-        <input type="text" class="form-control" id="marca" name="marca" required placeholder="Marca">
+        <input type="text" class="form-control" id="marca" name="marca" required placeholder="Marca" asp-for="Avion.marca">
 
         <label for="modelo" class="form-label">Modelo:</label>
-        <input type="text" class="form-control" id="modelo" name="modelo" required placeholder="Modelo">
+        <input type="text" class="form-control" id="modelo" name="modelo" required placeholder="Modelo" asp-for="Avion.modelo">
 
         <label for="numero_asientos" class="form-label">Número de asientos:</label>
-        <input type="number" class="form-control" id="numero_asientos" name="numero_asientos" required placeholder="Asientos">
+        <input type="number" class="form-control" id="numero_asientos" name="numero_asientos" required placeholder="Asientos" asp-for="Avion.numero_asientos">
 
         <label for="numero_banios" class="form-label">Número de baños:</label>
-        <input type="number" class="form-control" id="numero_banios" name="numero_banios" required placeholder="Baños">
+        <input type="number" class="form-control" id="numero_banios" name="numero_banios" required placeholder="Baños" asp-for="Avion.numero_banios">
 
         <label for="capacidad_maxima_peso" class="form-label">Capacidad máxima de peso al despegue (toneladas):</label>
-        <input type="number" class="form-control" id="capacidad_maxima_peso" name="capacidad_maxima_peso" required placeholder="Toneladas">
+        <input type="number" class="form-control" id="capacidad_maxima_peso" name="capacidad_maxima_peso" required placeholder="Toneladas" asp-for="Avion.capacidad_maxima_peso" step="any">
         <hr>
         <button type="submit" class="btn btn-success">Enviar</button>
     </form>
